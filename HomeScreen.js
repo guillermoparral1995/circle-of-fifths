@@ -1,5 +1,5 @@
 import React from "react";
-import {keys} from "./keys";
+import {keys, colours} from "./keys";
 import {Button, StyleSheet, Text, View} from "react-native";
 
 export default class HomeScreen extends React.Component {
@@ -11,7 +11,7 @@ export default class HomeScreen extends React.Component {
     }
 
     static navigationOptions = {
-        title: "Hola!"
+        header: null
     };
 
     handlePress(key){
@@ -20,8 +20,8 @@ export default class HomeScreen extends React.Component {
 
     render() {
         const keyButtons = Object.values(keys).map(key =>
-            <View key={`button-${key.key}`} style={styles.keyButton}>
-                <Button title={key.key} onPress={() => this.handlePress(key)}/>
+            <View key={`button-${key.key}`} style={[styles.keyButton, key.styles]}>
+                <Text style={styles.keyButtonText} onPress={() => this.handlePress(key)}>{key.key}</Text>
             </View>
         );
 
@@ -40,7 +40,13 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     keyButton: {
-        width: '50%',
+        padding: 5,
+        width: 50,
+        height: 50,
+        borderRadius: 100,
         marginTop: 10
+    },
+    keyButtonText: {
+        color: '#fff'
     }
 });
