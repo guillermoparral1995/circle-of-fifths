@@ -1,23 +1,13 @@
 {
   "expo": {
-<<<<<<< HEAD
     "name": "circle-of-fifths",
     "slug": "circle-of-fifths",
-=======
-    "name": "Circle of Fifths",
-    "slug": "CircleOfFifths",
-    "privacy": "public",
-    "sdkVersion": "33.0.0",
->>>>>>> 88d8f2f351dc933ac0afd3ff2f8f2a7c9c232d13
     "platforms": [
       "ios",
       "android",
       "web"
     ],
-<<<<<<< HEAD
     "entryPoint": "src/App.js",
-=======
->>>>>>> 88d8f2f351dc933ac0afd3ff2f8f2a7c9c232d13
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -36,8 +26,4 @@
       "supportsTablet": true
     }
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 88d8f2f351dc933ac0afd3ff2f8f2a7c9c232d13

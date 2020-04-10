@@ -1,24 +1,15 @@
 node_modules/**/*
 .expo/*
-<<<<<<< HEAD
 .expo-shared/*
 npm-debug.*
 *.jks
 *.p8
-=======
-npm-debug.*
-*.jks
->>>>>>> 88d8f2f351dc933ac0afd3ff2f8f2a7c9c232d13
 *.p12
 *.key
 *.mobileprovision
 *.orig.*
 web-build/
 web-report/
-<<<<<<< HEAD
 
 # macOS
 .DS_Store
-=======
-.idea/**/*
->>>>>>> 88d8f2f351dc933ac0afd3ff2f8f2a7c9c232d13
