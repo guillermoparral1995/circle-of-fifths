@@ -23,7 +23,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.guillermoparral.circle-of-fifths"
+    },
+    "android": {
+      "package": "com.guillermoparral.circle-of-fifths"
     }
   }
 }
