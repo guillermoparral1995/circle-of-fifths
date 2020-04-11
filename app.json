@@ -24,10 +24,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.guillermoparral.circle-of-fifths"
+      "bundleIdentifier": "com.guillermoparral.circleoffifths"
     },
     "android": {
-      "package": "com.guillermoparral.circle-of-fifths"
+      "package": "com.guillermoparral.circleoffifths"
     }
   }
 }

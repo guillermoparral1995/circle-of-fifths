@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import styles from './styles';
 
 const KeyScreen = props => {
   const {key, scales, keyStyles} = props.navigation.getParam('key');

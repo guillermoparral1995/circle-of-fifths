@@ -278,7 +278,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.guillermoparral.circle-of-fifths";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guillermoparral.circleoffifths";
 				PRODUCT_NAME = circle-of-fifths;
 				VERSIONING_SYSTEM = "apple-generic";
 				CODE_SIGN_ENTITLEMENTS = circleoffifths/circle-of-fifths.entitlements;
@@ -298,7 +298,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.guillermoparral.circle-of-fifths";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guillermoparral.circleoffifths";
 				PRODUCT_NAME = circle-of-fifths;
 				VERSIONING_SYSTEM = "apple-generic";
 				CODE_SIGN_ENTITLEMENTS = circleoffifths/circle-of-fifths.entitlements;
@@ -355,7 +355,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.guillermoparral.circle-of-fifths";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guillermoparral.circleoffifths";
 				PRODUCT_NAME = circle-of-fifths;
 				CODE_SIGN_ENTITLEMENTS = circleoffifths/circle-of-fifths.entitlements;
 			};
@@ -404,7 +404,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.guillermoparral.circle-of-fifths";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guillermoparral.circleoffifths";
 				PRODUCT_NAME = circle-of-fifths;
 				CODE_SIGN_ENTITLEMENTS = circleoffifths/circle-of-fifths.entitlements;
 			};

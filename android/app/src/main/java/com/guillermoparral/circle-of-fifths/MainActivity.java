@@ -1,4 +1,4 @@
-package com.guillermoparral.circle-of-fifths;
+package com.guillermoparral.circleoffifths;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
