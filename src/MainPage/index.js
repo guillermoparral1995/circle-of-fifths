@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import KeyButton from './KeyButton';
 import keys from '../keys';
 
-const MainPage = () => {
+const MainPage = ({ navigation }) => {
     return <View style={mainPageStyles}>
         <View style={keyContainerStyles}>
             {
@@ -12,7 +12,7 @@ const MainPage = () => {
                         key={`key-${title}`}
                         angle={idx * 30}
                         title={title}
-                        info={key} />
+                        navigation={navigation} />
                 )
             }
         </View>

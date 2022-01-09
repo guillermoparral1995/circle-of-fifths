@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { TouchableOpacity, View, Text, StyleSheet } from 'react-native';
 
-const onPress = () => {
-    alert('me presionaron!!!');
+const onPress = (navigation, title) => {
+    navigation.navigate('Key', { title })
 }
 
-const KeyButton = ({ angle, title, info }) => {
-    return <TouchableOpacity underlayColor="gray" onPress={onPress}>
+const KeyButton = ({ angle, title, navigation }) => {
+    return <TouchableOpacity underlayColor="gray" onPress={() => onPress(navigation, title)}>
         <View style={keyButtonStyles(angle)}>
             <Text style={keyTextStyles(angle)}>{title}</Text>
         </View>
