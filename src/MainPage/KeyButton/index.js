@@ -14,20 +14,15 @@ const KeyButton = ({ angle, title, navigation }) => {
 }
 
 const keyTextStyles = (angle) => StyleSheet.create({
-    position: 'absolute',
-    left: 25,
-    top: 25,
     transform: [{
-        translateX: -3,
-    }, {
-        translateY: -10
-    }, {
         rotate: `-${angle}deg`
     }]
 });
 
 const keyButtonStyles = (angle) => StyleSheet.create({
     backgroundColor: 'pink',
+    justifyContent: 'center',
+    alignItems: 'center',
     width: 50,
     height: 50,
     borderRadius: 25,
