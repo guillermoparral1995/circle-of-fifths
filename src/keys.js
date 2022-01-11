@@ -1,40 +1,62 @@
-const keys = {
+export default {
     A: {
-        major: ['A', 'B', 'C#', 'D', 'E', 'F#', 'G#', 'A'],
+        accidentals: ['F', 'C', 'G'],
+        accidentalType: 'sharp',
+        major: ['A/3', 'B/3', 'C/4', 'D/4', 'E/4', 'F/4', 'G/4', 'A/4'],
     },
     E: {
-        major: ['E', 'F#', 'G#', 'A', 'B', 'C#', 'D#', 'E'],
+        accidentals: ['F', 'C', 'G', 'D'],
+        accidentalType: 'sharp',
+        major: ['E/4', 'F/4', 'G/4', 'A/4', 'B/4', 'C/5', 'D/5', 'E/5'],
     },
     B: {
-        major: ['B', 'C#', 'D#', 'E', 'F#', 'G#', 'A#', 'B'],
+        accidentals: ['F', 'C', 'G', 'D', 'A'],
+        accidentalType: 'sharp',
+        major: ['B/3', 'C/4', 'D/4', 'E/4', 'F/4', 'G/4', 'A/4', 'B/4'],
     },
     'F#': {
-        major: ['F#', 'G#', 'A#', 'B', 'C#', 'D#', 'E# (F)', 'F#'],
+        accidentals: ['F', 'C', 'G', 'D', 'A', 'E'],
+        accidentalType: 'sharp',
+        major: ['F/4', 'G/4', 'A/4', 'B/4', 'C/5', 'D/5', 'E/5', 'F/5'],
     },
     'C#': {
-        major: ['C#', 'D#', 'E# (F)', 'F#', 'G#', 'A#', 'B# (C)', 'C#'],
+        accidentals: ['B', 'E', 'A', 'D', 'G'],
+        accidentalType: 'flat',
+        major: ['C/4', 'D/4', 'E/4', 'F/4', 'G/4', 'A/4', 'B/4', 'C/5'],
     },
-    'G#': {
-        major: ['G#', 'A#', 'B# (C)', 'C#', 'D#', 'E# (F)', 'G', 'G#'],
+    'Ab': {
+        accidentals: ['B', 'E', 'A', 'D'],
+        accidentalType: 'flat',
+        major: ['A/3', 'B/3', 'C/4', 'D/4', 'E/4', 'F/4', 'G/4', 'A/4'],
     },
-    'D#': {
-        major: ['D#', 'E# (F)', 'F## (G)', 'G#', 'A#', 'B# (C)', 'C## (D)', 'D#'],
+    'Eb': {
+        accidentals: ['B', 'E', 'A'],
+        accidentalType: 'flat',
+        major: ['E/4', 'F/4', 'G/4', 'A/4', 'B/4', 'C/5', 'D/5', 'E/5'],
     },
-    'A#': {
-        major: ['A#', 'B# (C)', 'C## (D)', 'D#', 'E# (F)', 'F## (G)', 'G## (A)', 'A#'],
+    'Bb': {
+        accidentals: ['B', 'E'],
+        accidentalType: 'flat',
+        major: ['B/3', 'C/4', 'D/4', 'E/4', 'F/4', 'G/4', 'A/4', 'B/4'],
     },
     F: {
-        major: ['F', 'G', 'A', 'Bb', 'C', 'D', 'E', 'F'],
+        accidentals: ['B'],
+        accidentalType: 'flat',
+        major: ['F/4', 'G/4', 'A/4', 'B/4', 'C/5', 'D/5', 'E/5', 'F/5'],
     },
     C: {
-        major: ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C'],
+        accidentals: [],
+        accidentalType: 'none',
+        major: ['C/4', 'D/4', 'E/4', 'F/4', 'G/4', 'A/4', 'B/4', 'C/5'],
     },
     G: {
-        major: ['G', 'A', 'B', 'C', 'D', 'E', 'F#', 'G'],
+        accidentals: ['F'],
+        accidentalType: 'sharp',
+        major: ['G/4', 'A/4', 'B/4', 'C/5', 'D/5', 'E/5', 'F/5', 'G/5'],
     },
     D: {
-        major: ['D', 'E', 'F#', 'G', 'A', 'B', 'C#', 'D'],
+        accidentals: ['F, C'],
+        accidentalType: 'sharp',
+        major: ['D/4', 'E/4', 'F/4', 'G/4', 'A/4', 'B/4', 'C/5', 'D/5'],
     },
 };
-
-export default keys;
