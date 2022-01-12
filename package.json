@@ -18,7 +18,7 @@
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.10.1",
     "react-native-svg": "^12.1.1",
-    "react-native-vexflow": "0.0.1",
+    "standalone-vexflow-context": "^0.1.1",
     "vexflow": "^3.0.9"
   },
   "devDependencies": {

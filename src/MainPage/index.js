@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View, StyleSheet } from 'react-native';
 import KeyButton from './KeyButton';
-import keys from '../keys';
+import voices from '../voices';
 import * as Animatable from 'react-native-animatable';
 
 const animation = {
@@ -29,11 +29,12 @@ const MainPage = ({ navigation }) => {
     return <View style={mainPageStyles}>
         <Animatable.View animation={animation} style={keyContainerStyles} easing={"ease-in-out"}>
             {
-                Object.entries(keys).map(([title, key], idx) =>
+                Object.entries(voices.major).map(([key, voice], idx) =>
                     <KeyButton
-                        key={`key-${title}`}
+                        key={`key-${key}`}
                         angle={idx * 30}
-                        title={title}
+                        title={key}
+                        voice={voice}
                         navigation={navigation} />
                 )
             }

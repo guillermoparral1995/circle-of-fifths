@@ -1,35 +1,31 @@
 import * as React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { ReactNativeSVGContext, NotoFontPack } from 'standalone-vexflow-context';
 import Vex from 'vexflow';
-import { useScore } from 'react-native-vexflow';
-import keys from '../keys';
 
-const VF = Vex.Flow;
+const X_OFFSET = 10;
+const Y_OFFSET = 150;
+const STAVE_WIDTH = 380;
+const SVG_CONTEXT_SIZE = {
+    width: 400,
+    height: 400,
+}
 
 const KeyPage = ({ route }) => {
-    const [context, stave] = useScore({
-        contextSize: { x: 350, y: 350 },
-        staveOffset: { x: 0, y: 0 },
-        staveWidth: 300,
-        clef: 'treble',
-    });
-    const key = route.params.title;
-    const keySignature = new VF.KeySignature(key);
-    keySignature.addToStave(stave);
-    const notes = keys[key].major.map(note =>
-        new VF.StaveNote({ clef: 'treble', keys: [note], duration: 'q' }));
-
-    var voice = new VF.Voice({ num_beats: 8, beat_value: 4 });
-    voice.addTickables(notes);
-
-    VF.Accidental.applyAccidentals([voice], key);
-    keySignature.addToStave(stave);
-
-    var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 200);
-    voice.draw(context, stave);
+    const context = new ReactNativeSVGContext(NotoFontPack, SVG_CONTEXT_SIZE);
+    const stave = new Vex.Flow.Stave(X_OFFSET, Y_OFFSET, STAVE_WIDTH);
+    stave.setContext(context);
+    stave.setClef('treble');
+    const keySignature = new Vex.Flow.KeySignature(route.params.title);
+    keySignature.addToStave(stave, true);
+    stave.draw();
+    route.params.voice.draw(context, stave);
+    console.log(route.params.voice.getBoundingBox(), 'bounding box');
 
     return <View style={keyPageStyles}>
-        {context.render()}
+        <View style={{ ...SVG_CONTEXT_SIZE, backgroundColor: 'pink' }}>
+            {context.render()}
+        </View>
     </View>
 }
 
